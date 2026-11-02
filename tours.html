@@ -1,0 +1,2383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signature Tours — Unlock Cape Town Tours | Private Guided Experiences (WC 16800)</title>
+  <meta name="description" content="Explore our signature private Cape Town tours with accredited guide Louis Hendry (WC 16800): Cape Peninsula & Boulders Penguins, Stellenbosch & Franschhoek Winelands, Table Mountain, Big 5 Safaris, Hermanus Whales & VIP Airport Transfers." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+
+  <!-- Google Fonts: Plus Jakarta Sans + Playfair Display for editorial flavor -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg-cream: #FDFAF4;
+      --bg-cream-alt: #F7F2E8;
+      --bg-white: #FFFFFF;
+      --olive-dark: #181B07;
+      --olive-deep: #131606;
+      --olive-banner: #2E3719;
+      --olive-soft: #3D4823;
+      --red-brand: #D91E20;
+      --red-hover: #B51517;
+      --gold-accent: #D49F38;
+      --gold-soft: #F5E6C4;
+      --text-body: #4A4D42;
+      --text-muted: #6E7165;
+      --border-light: #E8E2D5;
+      --badge-beige: #F2ECE0;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-serif: 'Playfair Display', Georgia, serif;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-cream);
+      color: var(--olive-dark);
+      line-height: 1.6;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.25s ease;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .container {
+      max-width: 1320px;
+      width: 92%;
+      margin: 0 auto;
+    }
+
+    .serif-accent {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-weight: 600;
+    }
+
+    .wa-official-icon {
+      fill: currentColor !important;
+      stroke: none !important;
+      flex-shrink: 0;
+    }
+
+    /* Buttons */
+    .btn-red {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #E32224 0%, #C21517 100%);
+      color: #FFFFFF;
+      font-weight: 600;
+      font-size: 15px;
+      letter-spacing: 0.01em;
+      padding: 13px 26px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 8px 22px rgba(217, 30, 32, 0.25);
+      transition: all 0.25s ease;
+      white-space: nowrap;
+      font-family: inherit;
+    }
+
+    .btn-red:hover {
+      background: linear-gradient(135deg, #C9181A 0%, #A31012 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(217, 30, 32, 0.35);
+    }
+
+    .btn-red svg:not(.wa-official-icon) {
+      width: 17px;
+      height: 17px;
+      stroke-width: 2.2;
+      transition: transform 0.25s ease;
+    }
+
+    .btn-red:hover svg:not(.wa-official-icon) {
+      transform: translateX(3px);
+    }
+
+    .btn-outline-cream {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.12);
+      color: #FFFFFF;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 13px 26px;
+      border-radius: 999px;
+      border: 1.5px solid rgba(255, 255, 255, 0.45);
+      backdrop-filter: blur(8px);
+      transition: all 0.25s ease;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .btn-outline-cream:hover {
+      background: #FFFFFF;
+      color: var(--olive-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-wa-green {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      background: linear-gradient(135deg, #25D366 0%, #1DA851 100%);
+      color: #FFFFFF;
+      font-weight: 700;
+      font-size: 14.5px;
+      padding: 12px 22px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.28);
+      transition: all 0.25s ease;
+      font-family: inherit;
+    }
+
+    .btn-wa-green:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 26px rgba(37, 211, 102, 0.4);
+    }
+
+    .btn-outline-dark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #FFFFFF;
+      color: var(--olive-dark);
+      font-weight: 700;
+      font-size: 14px;
+      padding: 12px 20px;
+      border-radius: 999px;
+      border: 1.5px solid #D9D1C0;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      font-family: inherit;
+    }
+
+    .btn-outline-dark:hover {
+      background: var(--olive-banner);
+      color: #FFFFFF;
+      border-color: var(--olive-banner);
+    }
+
+    .section-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background-color: var(--badge-beige);
+      border: 1px solid #E5DEC9;
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--olive-banner);
+      margin-bottom: 14px;
+    }
+
+    .section-pill-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--red-brand);
+    }
+
+    /* ==================== HEADER / NAVBAR ==================== */
+    .site-header {
+      background-color: rgba(253, 250, 244, 0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(232, 226, 213, 0.8);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      position: relative;
+    }
+
+    .header-brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-shrink: 0;
+    }
+
+    .header-logo-wrap {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      padding: 3px;
+      background: linear-gradient(135deg, var(--gold-accent), var(--olive-banner));
+      box-shadow: 0 6px 18px rgba(24, 27, 7, 0.14);
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .header-brand:hover .header-logo-wrap {
+      transform: scale(1.04);
+    }
+
+    .header-logo {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      background-color: var(--bg-cream);
+    }
+
+    .header-brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header-brand-name {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--olive-dark);
+      letter-spacing: -0.01em;
+      line-height: 1.15;
+    }
+
+    .header-brand-sub {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--red-brand);
+      margin-top: 2px;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .main-nav a {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-body);
+      padding: 6px 0;
+      position: relative;
+    }
+
+    .main-nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2.5px;
+      background-color: var(--red-brand);
+      border-radius: 2px;
+      transition: width 0.25s ease;
+    }
+
+    .main-nav a.active {
+      color: var(--olive-dark);
+      font-weight: 700;
+    }
+
+    .main-nav a.active::after,
+    .main-nav a:hover::after {
+      width: 100%;
+    }
+
+    .main-nav a:hover {
+      color: var(--olive-dark);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .mobile-menu-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      border: 1px solid var(--border-light);
+      background: #FFFFFF;
+      color: var(--olive-dark);
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    /* ==================== TOURS COVER HERO SECTION ==================== */
+    .page-cover {
+      position: relative;
+      min-height: 490px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 88px 0 80px;
+      overflow: hidden;
+      text-align: center;
+      color: #FFFFFF;
+      background-color: var(--olive-deep);
+    }
+
+    .page-cover-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 45%;
+      transform: scale(1.02);
+    }
+
+    .page-cover::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(15, 20, 8, 0.65) 0%,
+        rgba(15, 20, 8, 0.78) 65%,
+        rgba(15, 20, 8, 0.90) 100%
+      );
+      z-index: 1;
+    }
+
+    .page-cover-content {
+      position: relative;
+      z-index: 2;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .cover-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 18px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.14);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      color: var(--gold-soft);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .page-cover h1 {
+      font-size: clamp(36px, 5vw, 62px);
+      font-weight: 700;
+      line-height: 1.08;
+      letter-spacing: -0.025em;
+      margin-bottom: 18px;
+      color: #FFFFFF;
+    }
+
+    .page-cover h1 .serif-accent {
+      color: var(--gold-soft);
+    }
+
+    .page-cover p {
+      font-size: clamp(16px, 1.8vw, 19px);
+      color: rgba(255, 255, 255, 0.9);
+      max-width: 680px;
+      margin: 0 auto 30px;
+      line-height: 1.65;
+    }
+
+    .cover-badges {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .cover-badge-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(24, 27, 7, 0.65);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(212, 159, 56, 0.4);
+      color: #FFFFFF;
+      padding: 9px 16px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .cover-badge-item svg {
+      color: var(--gold-accent);
+      flex-shrink: 0;
+    }
+
+    /* ==================== ELEVATED TAGLINE STRIP ==================== */
+    .tagline-banner {
+      background: linear-gradient(135deg, #252D13 0%, #353E1E 50%, #222910 100%);
+      padding: 24px 0;
+      position: relative;
+      overflow: hidden;
+      border-top: 1px solid rgba(212, 159, 56, 0.25);
+      border-bottom: 1px solid rgba(212, 159, 56, 0.25);
+    }
+
+    .tagline-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .tagline-word {
+      color: #FFFFFF;
+      font-size: clamp(19px, 2.3vw, 29px);
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+
+    .tagline-word.italic-word {
+      font-family: var(--font-serif);
+      font-style: italic;
+      color: var(--gold-soft);
+      font-weight: 500;
+    }
+
+    .tagline-sep {
+      display: inline-block;
+      width: 1px;
+      height: 18px;
+      background: rgba(255, 255, 255, 0.28);
+    }
+
+    /* ==================== TOURS CATALOG SECTION ==================== */
+    .tours-catalog {
+      padding: 72px 0;
+      background-color: var(--bg-cream);
+    }
+
+    .catalog-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 34px;
+    }
+
+    .catalog-header h2 {
+      font-size: clamp(30px, 3.2vw, 42px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+
+    .catalog-header p {
+      font-size: 16px;
+      color: var(--text-body);
+    }
+
+    .filter-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 42px;
+    }
+
+    .filter-btn {
+      padding: 10px 20px;
+      border-radius: 999px;
+      border: 1.5px solid #DED6C6;
+      background: #FFFFFF;
+      color: var(--text-body);
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.22s ease;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--olive-banner);
+      color: var(--olive-dark);
+    }
+
+    .filter-btn.active {
+      background: var(--olive-banner);
+      color: var(--gold-soft);
+      border-color: var(--olive-banner);
+      box-shadow: 0 8px 20px rgba(46, 55, 25, 0.2);
+    }
+
+    .tours-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .tour-card {
+      background: #FFFFFF;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid var(--border-light);
+      box-shadow: 0 12px 32px rgba(24, 27, 7, 0.07);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .tour-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 44px rgba(24, 27, 7, 0.13);
+    }
+
+    .tour-img-wrap {
+      position: relative;
+      height: 245px;
+      overflow: hidden;
+    }
+
+    .tour-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.55s ease;
+    }
+
+    .tour-card:hover .tour-img-wrap img {
+      transform: scale(1.06);
+    }
+
+    .tour-badge-top {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: rgba(24, 27, 7, 0.82);
+      backdrop-filter: blur(8px);
+      color: var(--gold-soft);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .tour-duration-pill {
+      position: absolute;
+      bottom: 14px;
+      right: 14px;
+      background: rgba(255, 255, 255, 0.94);
+      color: var(--olive-dark);
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    .tour-body {
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .tour-title {
+      font-size: 21px;
+      font-weight: 700;
+      color: var(--olive-dark);
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+
+    .tour-summary {
+      font-size: 14.5px;
+      color: var(--text-body);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .tour-highlights {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 20px;
+      flex: 1;
+    }
+
+    .tour-highlights li {
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      font-size: 13.5px;
+      color: var(--olive-dark);
+      font-weight: 500;
+    }
+
+    .tour-highlights li svg {
+      color: var(--red-brand);
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    .tour-meta-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 14px;
+      background: var(--bg-cream);
+      border: 1px solid var(--border-light);
+      border-radius: 12px;
+      margin-bottom: 16px;
+    }
+
+    .tour-meta-bar small {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+    }
+
+    .tour-meta-bar strong {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--olive-banner);
+    }
+
+    .tour-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    /* ==================== INCLUDED IN EVERY TOUR SECTION ==================== */
+    .included-section {
+      padding: 68px 0;
+      background: var(--bg-white);
+      border-top: 1px solid var(--border-light);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .included-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+      margin-top: 36px;
+    }
+
+    .included-card {
+      background: var(--bg-cream);
+      border: 1px solid var(--border-light);
+      border-radius: 20px;
+      padding: 26px 22px;
+    }
+
+    .included-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: var(--olive-banner);
+      color: var(--gold-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+
+    .included-card h3 {
+      font-size: 17.5px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--olive-dark);
+    }
+
+    .included-card p {
+      font-size: 14px;
+      color: var(--text-body);
+      line-height: 1.58;
+    }
+
+    /* ==================== ITINERARY MODAL ==================== */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 18, 6, 0.76);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 99999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .modal-backdrop.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-box {
+      background: #FFFFFF;
+      border-radius: 24px;
+      max-width: 860px;
+      width: 100%;
+      max-height: 92vh;
+      overflow-y: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      padding: 0;
+      box-shadow: 0 28px 70px rgba(0, 0, 0, 0.38);
+      border: 1px solid rgba(232, 226, 213, 0.9);
+      position: relative;
+      transform: translateY(18px) scale(0.98);
+      transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .modal-box::-webkit-scrollbar {
+      display: none;
+    }
+
+    .modal-backdrop.open .modal-box {
+      transform: translateY(0) scale(1);
+    }
+
+    .modal-head {
+      background: linear-gradient(135deg, #1E250F 0%, #2E3719 100%);
+      color: #FFFFFF;
+      padding: 26px 32px 22px;
+      position: relative;
+      border-bottom: 2px solid var(--gold-accent);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 22px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: rgba(255, 255, 255, 0.1);
+      color: #FFFFFF;
+      font-size: 22px;
+      line-height: 1;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+
+    .modal-close:hover {
+      background: #FFFFFF;
+      color: var(--olive-dark);
+      border-color: #FFFFFF;
+    }
+
+    .modal-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 13px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(212, 159, 56, 0.45);
+      color: var(--gold-soft);
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      margin-bottom: 8px;
+    }
+
+    .modal-title {
+      font-size: clamp(21px, 2.5vw, 26px);
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 6px;
+      padding-right: 44px;
+      line-height: 1.2;
+    }
+
+    .modal-desc {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.84);
+      margin-bottom: 0;
+      line-height: 1.5;
+    }
+
+    .modal-body {
+      padding: 24px 32px 26px;
+      background: var(--bg-cream);
+    }
+
+    .modal-stops {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .modal-stops li {
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: #FFFFFF;
+      border: 1px solid var(--border-light);
+      box-shadow: 0 4px 14px rgba(24, 27, 7, 0.04);
+      font-size: 13.5px;
+      color: var(--text-body);
+      line-height: 1.5;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .modal-stops li:last-child:nth-child(odd) {
+      grid-column: 1 / -1;
+    }
+
+    .modal-stop-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 9px;
+      background: var(--badge-beige);
+      border: 1px solid #E2D9C5;
+      color: var(--olive-banner);
+      font-size: 11.5px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .modal-stop-text strong {
+      display: block;
+      font-size: 14px;
+      color: var(--olive-dark);
+      margin-bottom: 3px;
+      line-height: 1.3;
+    }
+
+    .modal-perks {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 11px 16px;
+      border-radius: 12px;
+      background: var(--badge-beige);
+      border: 1px solid #E4DCC8;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--olive-banner);
+      margin-bottom: 18px;
+    }
+
+    .modal-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 680px) {
+      .modal-head {
+        padding: 22px 20px 18px;
+      }
+      .modal-body {
+        padding: 18px 20px 22px;
+      }
+      .modal-stops {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ==================== BOTTOM SCENIC BANNER ==================== */
+    .story-banner {
+      position: relative;
+      min-height: 490px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: 88px 0;
+      text-align: center;
+    }
+
+    .story-banner-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 45%;
+      transform: scale(1.02);
+    }
+
+    .story-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(
+        circle at 50% 50%,
+        rgba(15, 22, 10, 0.72) 0%,
+        rgba(15, 22, 10, 0.86) 100%
+      );
+      z-index: 1;
+    }
+
+    .story-content {
+      position: relative;
+      z-index: 2;
+      color: #FFFFFF;
+      max-width: 860px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .story-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.14);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      color: var(--gold-soft);
+      padding: 8px 20px;
+      border-radius: 999px;
+      font-size: 12.5px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .story-content h2 {
+      font-size: clamp(36px, 5.4vw, 66px);
+      font-weight: 700;
+      line-height: 1.08;
+      letter-spacing: -0.025em;
+      margin-bottom: 18px;
+    }
+
+    .story-sub {
+      font-size: clamp(16px, 1.8vw, 20px);
+      color: rgba(255, 255, 255, 0.9);
+      max-width: 640px;
+      margin: 0 auto 34px;
+      line-height: 1.6;
+    }
+
+    .story-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    .story-actions .btn-red,
+    .story-actions .btn-outline-cream {
+      font-size: 16px;
+      padding: 15px 32px;
+    }
+
+    .story-actions svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* ==================== FOOTER ==================== */
+    .site-footer {
+      background-color: var(--olive-deep);
+      color: #FFFFFF;
+      padding: 64px 0 28px;
+      position: relative;
+      border-top: 3px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.75fr 0.95fr 1.1fr;
+      gap: 40px;
+      padding-bottom: 44px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .footer-brand-col {
+      padding-right: 16px;
+    }
+
+    .footer-brand-head {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    .footer-brand-head img {
+      width: 74px;
+      height: 74px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #FFFFFF;
+      background: var(--bg-cream);
+      flex-shrink: 0;
+    }
+
+    .footer-brand-title {
+      font-size: 19px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.2;
+      margin-bottom: 4px;
+    }
+
+    .footer-brand-sub {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+
+    .footer-bio {
+      font-size: 14.5px;
+      color: #FFFFFF;
+      line-height: 1.62;
+      margin-bottom: 20px;
+    }
+
+    .footer-accreditation {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #FFFFFF;
+      font-size: 12.5px;
+      font-weight: 600;
+    }
+
+    .footer-col-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #FFFFFF;
+      margin-bottom: 18px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .footer-col-title::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 28px;
+      height: 2px;
+      background-color: #FFFFFF;
+      border-radius: 2px;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+    }
+
+    .footer-links a {
+      font-size: 14.5px;
+      color: #FFFFFF;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .footer-links a:hover {
+      color: #FFFFFF;
+      opacity: 0.85;
+      transform: translateX(4px);
+    }
+
+    .footer-links a span.bullet {
+      color: #FFFFFF;
+      font-size: 14px;
+    }
+
+    .footer-contact-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0;
+      border-radius: 0;
+      background: none;
+      border: none;
+      transition: transform 0.25s ease, opacity 0.25s ease;
+    }
+
+    .footer-contact-item:hover {
+      background: none;
+      border: none;
+      opacity: 0.88;
+      transform: translateX(3px);
+    }
+
+    .contact-dot {
+      width: 22px;
+      height: 22px;
+      border-radius: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      background: none;
+      border: none;
+      flex-shrink: 0;
+    }
+
+    .dot-wa,
+    .dot-mail,
+    .dot-web {
+      background-color: transparent;
+      color: #FFFFFF;
+    }
+
+    .footer-contact-info small {
+      display: block;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #FFFFFF;
+    }
+
+    .footer-contact-info strong {
+      font-size: 14px;
+      font-weight: 600;
+      color: #FFFFFF;
+    }
+
+    .footer-socials {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .social-circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      transition: all 0.25s ease;
+    }
+
+    .social-circle:hover {
+      transform: translateY(-3px);
+      background: rgba(255, 255, 255, 0.14);
+      border-color: #FFFFFF;
+    }
+
+    .footer-bottom {
+      padding-top: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 13.5px;
+      color: #FFFFFF;
+    }
+
+    /* ==================== FLOATING WHATSAPP CHATBOT ==================== */
+    .wa-chatbot {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 9999;
+      font-family: var(--font-sans);
+    }
+
+    .wa-chat-window {
+      position: absolute;
+      bottom: 76px;
+      right: 0;
+      width: 360px;
+      max-width: calc(100vw - 32px);
+      background: #FFFFFF;
+      border-radius: 22px;
+      box-shadow: 0 22px 54px rgba(15, 20, 8, 0.26);
+      border: 1px solid rgba(232, 226, 213, 0.9);
+      overflow: hidden;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(16px) scale(0.96);
+      transform-origin: bottom right;
+      transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .wa-chatbot.open .wa-chat-window {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0) scale(1);
+    }
+
+    .wa-chat-header {
+      background: linear-gradient(135deg, #1E2610 0%, #2E3719 100%);
+      color: #FFFFFF;
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      border-bottom: 2px solid var(--gold-accent);
+    }
+
+    .wa-chat-profile {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .wa-chat-avatar-wrap {
+      position: relative;
+      width: 46px;
+      height: 46px;
+      flex-shrink: 0;
+    }
+
+    .wa-chat-avatar-wrap img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--gold-accent);
+      background: var(--bg-cream);
+    }
+
+    .wa-online-dot {
+      position: absolute;
+      bottom: 1px;
+      right: 1px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #25D366;
+      border: 2px solid #1E2610;
+    }
+
+    .wa-chat-profile-info strong {
+      display: block;
+      font-size: 15px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.2;
+    }
+
+    .wa-chat-profile-info span {
+      font-size: 11.5px;
+      color: var(--gold-soft);
+      font-weight: 500;
+    }
+
+    .wa-chat-close {
+      background: rgba(255, 255, 255, 0.12);
+      border: none;
+      color: #FFFFFF;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+
+    .wa-chat-body {
+      background-color: #F4EFE6;
+      padding: 18px 16px 14px;
+      max-height: 320px;
+      overflow-y: auto;
+    }
+
+    .wa-msg-bubble {
+      background: #FFFFFF;
+      border-radius: 4px 16px 16px 16px;
+      padding: 12px 14px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      font-size: 13.5px;
+      color: var(--olive-dark);
+      line-height: 1.5;
+      margin-bottom: 14px;
+      border: 1px solid #E8E2D5;
+    }
+
+    .wa-msg-sender {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--olive-banner);
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .wa-quick-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .wa-quick-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .wa-chip {
+      background: #FFFFFF;
+      border: 1px solid #DED6C6;
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--olive-dark);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+
+    .wa-chip:hover {
+      background: var(--olive-banner);
+      color: #FFFFFF;
+      border-color: var(--olive-banner);
+    }
+
+    .wa-chat-footer {
+      padding: 12px 14px;
+      background: #FFFFFF;
+      border-top: 1px solid #ECE6DA;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .wa-chat-input {
+      flex: 1;
+      border: 1px solid #DFD8C8;
+      background: var(--bg-cream);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-size: 14px;
+      font-family: inherit;
+      color: var(--olive-dark);
+      outline: none;
+    }
+
+    .wa-chat-send {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #25D366;
+      color: #FFFFFF;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .wa-launcher {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #25D366 0%, #1DA851 100%);
+      color: #FFFFFF;
+      border: none;
+      border-radius: 999px;
+      padding: 13px 20px 13px 16px;
+      font-family: inherit;
+      font-size: 14.5px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 12px 28px rgba(37, 211, 102, 0.38);
+      transition: all 0.25s ease;
+      position: relative;
+    }
+
+    .wa-launcher svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    .wa-launcher-badge {
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--red-brand);
+      color: #FFFFFF;
+      font-size: 10px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #FFFFFF;
+    }
+
+    /* ==================== RESPONSIVE ==================== */
+    @media (max-width: 1080px) {
+      .tours-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .included-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .mobile-menu-toggle {
+        display: inline-flex;
+      }
+      .header-cta-desktop {
+        display: none;
+      }
+      .main-nav {
+        position: absolute;
+        top: calc(100% + 12px);
+        left: 0;
+        right: 0;
+        background: #FFFFFF;
+        border: 1px solid var(--border-light);
+        border-radius: 20px;
+        box-shadow: 0 20px 48px rgba(24, 27, 7, 0.16);
+        padding: 20px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: all 0.25s ease;
+        z-index: 1001;
+      }
+      .main-nav.open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+      .main-nav a {
+        padding: 12px 16px;
+        border-radius: 12px;
+        font-size: 16px;
+      }
+      .main-nav a::after {
+        display: none;
+      }
+      .main-nav a.active,
+      .main-nav a:hover {
+        background: var(--badge-beige);
+      }
+    }
+
+    @media (max-width: 680px) {
+      .header-logo-wrap {
+        width: 56px;
+        height: 56px;
+      }
+      .header-brand-name {
+        font-size: 15.5px;
+      }
+      .header-brand-sub {
+        font-size: 10px;
+      }
+      .page-cover {
+        min-height: 410px;
+        padding: 64px 0 56px;
+      }
+      .tours-grid,
+      .included-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .tour-actions {
+        grid-template-columns: 1fr;
+      }
+      .tagline-inner {
+        gap: 10px 14px;
+      }
+      .tagline-word {
+        font-size: 17px;
+      }
+      .story-banner {
+        padding: 64px 0;
+        min-height: 400px;
+      }
+      .story-actions {
+        flex-direction: column;
+        width: 100%;
+      }
+      .story-actions .btn-red,
+      .story-actions .btn-outline-cream {
+        width: 100%;
+      }
+      .wa-chatbot {
+        bottom: 16px;
+        right: 16px;
+      }
+      .wa-launcher {
+        padding: 12px 16px;
+        font-size: 13.5px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="home2.html" class="header-brand">
+        <div class="header-logo-wrap">
+          <img src="assets/logo.png" alt="Unlock Cape Town Tours Logo" class="header-logo" />
+        </div>
+        <div class="header-brand-text">
+          <span class="header-brand-name">Unlock Cape Town</span>
+          <span class="header-brand-sub">Private Tours • WC 16800</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="home2.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="tours.html" class="active">Our Tours</a>
+        <a href="travel-guide.html">Travel Guide</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://wa.me/27840607488?text=Hello%20Louis!%20I%20would%20love%20to%20book%20a%20private%20Cape%20Town%20tour." target="_blank" rel="noopener" class="btn-red header-cta-desktop">
+          <span>Book a Tour</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <button type="button" class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== TOURS COVER HERO ==================== -->
+  <section class="page-cover">
+    <img src="assets/images/chapmans-peak.jpg" alt="Dramatic Cape Peninsula coastline and Chapman's Peak Drive" class="page-cover-bg" />
+    <div class="container page-cover-content">
+      <div class="cover-pill">
+        <span class="section-pill-dot"></span>
+        <span>CURATED PRIVATE ITINERARIES • WC 16800</span>
+      </div>
+      <h1>
+        Signature Cape Town <span class="serif-accent">Tours</span> &amp; Experiences.
+      </h1>
+      <p>
+        Every journey is 100% private to your group, personally guided by Louis Hendry (WC 16800), and tailored around your pace with door-to-door pickup.
+      </p>
+
+      <div class="cover-badges">
+        <div class="cover-badge-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          <span>Accredited Guide WC 16800</span>
+        </div>
+        <div class="cover-badge-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>100% Private to Your Group</span>
+        </div>
+        <div class="cover-badge-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Door-to-Door Hotel &amp; CPT Pickup</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SIGNATURE TOURS CATALOG ==================== -->
+  <section class="tours-catalog">
+    <div class="container">
+      <div class="catalog-header">
+        <div class="section-pill">
+          <span class="section-pill-dot"></span>
+          <span>CHOOSE YOUR ADVENTURE</span>
+        </div>
+        <h2>Explore the best of the <span class="serif-accent">Western Cape.</span></h2>
+        <p>Select a category below and explore the full stop-by-stop itinerary for your private tour.</p>
+      </div>
+
+      <div class="filter-bar" role="tablist" aria-label="Tour Categories">
+        <button type="button" class="filter-btn active" data-filter="all">All Experiences (6)</button>
+        <button type="button" class="filter-btn" data-filter="peninsula">Peninsula &amp; Penguins</button>
+        <button type="button" class="filter-btn" data-filter="winelands">Cape Winelands</button>
+        <button type="button" class="filter-btn" data-filter="city">Table Mountain &amp; City</button>
+        <button type="button" class="filter-btn" data-filter="wildlife">Big 5 Safari &amp; Whales</button>
+        <button type="button" class="filter-btn" data-filter="custom">Custom &amp; VIP Transfers</button>
+      </div>
+
+      <div class="tours-grid">
+        <!-- Tour 1 -->
+        <article class="tour-card" id="peninsula" data-category="peninsula">
+          <div class="tour-img-wrap">
+            <img src="assets/images/boulders-penguins.jpg" alt="African Penguins at Boulders Beach on the Cape Peninsula" />
+            <span class="tour-badge-top">#1 Flagship Tour</span>
+            <span class="tour-duration-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Full Day (8–9 Hrs)
+            </span>
+          </div>
+          <div class="tour-body">
+            <h3 class="tour-title">Cape Peninsula &amp; Boulders Penguins Odyssey</h3>
+            <p class="tour-summary">
+              Follow the dramatic Atlantic coastline along Chapman's Peak Drive to the Cape of Good Hope, Cape Point Lighthouse, and the famous Boulders Beach African Penguins.
+            </p>
+            <ul class="tour-highlights">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Clifton, Camps Bay &amp; Hout Bay Seal Island option</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>World-famous Chapman’s Peak cliffside drive</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Cape of Good Hope, Cape Point &amp; Boulders Penguins</span>
+              </li>
+            </ul>
+            <div class="tour-meta-bar">
+              <small>Private Chauffeur Rate</small>
+              <strong>Custom Group Quote</strong>
+            </div>
+            <div class="tour-actions">
+              <a href="tour-cape-peninsula.html" class="btn-outline-dark">View Itinerary</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tour 2 -->
+        <article class="tour-card" id="winelands" data-category="winelands">
+          <div class="tour-img-wrap">
+            <img src="assets/images/winelands-stellenbosch.jpg" alt="Stellenbosch and Franschhoek Cape Winelands" />
+            <span class="tour-badge-top">Wine &amp; Gastronomy</span>
+            <span class="tour-duration-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Full Day (8 Hrs)
+            </span>
+          </div>
+          <div class="tour-body">
+            <h3 class="tour-title">Cape Winelands: Stellenbosch, Franschhoek &amp; Paarl</h3>
+            <p class="tour-summary">
+              Indulge in award-winning vintages, artisan cheese &amp; chocolate pairings, and historic Cape Dutch estates nestled beneath dramatic mountain peaks.
+            </p>
+            <ul class="tour-highlights">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Historic Stellenbosch oak-lined walk &amp; cellar tour</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Franschhoek Valley &amp; scenic vineyard lunch stop</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>3–4 curated wine, cheese, olive or chocolate tastings</span>
+              </li>
+            </ul>
+            <div class="tour-meta-bar">
+              <small>Private Chauffeur Rate</small>
+              <strong>Custom Group Quote</strong>
+            </div>
+            <div class="tour-actions">
+              <button type="button" class="btn-outline-dark" data-modal="winelands">View Itinerary</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tour 3 -->
+        <article class="tour-card" id="city" data-category="city">
+          <div class="tour-img-wrap">
+            <img src="assets/images/bokaap-houses.jpg" alt="Table Mountain and Bo-Kaap Mother City Tour" />
+            <span class="tour-badge-top">Culture &amp; Icons</span>
+            <span class="tour-duration-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Half or Full Day
+            </span>
+          </div>
+          <div class="tour-body">
+            <h3 class="tour-title">Table Mountain &amp; Mother City Discovery</h3>
+            <p class="tour-summary">
+              Ascend Table Mountain by rotating cableway and uncover the living stories, spices, and heritage of colourful Bo-Kaap, Company's Garden, and Kirstenbosch.
+            </p>
+            <ul class="tour-highlights">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Table Mountain Aerial Cableway &amp; Signal Hill views</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Guided walk through colourful Bo-Kaap &amp; spice quarter</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Company's Garden, Castle of Good Hope &amp; Kirstenbosch</span>
+              </li>
+            </ul>
+            <div class="tour-meta-bar">
+              <small>Private Chauffeur Rate</small>
+              <strong>Custom Group Quote</strong>
+            </div>
+            <div class="tour-actions">
+              <button type="button" class="btn-outline-dark" data-modal="city">View Itinerary</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tour 4 -->
+        <article class="tour-card" id="safari" data-category="wildlife">
+          <div class="tour-img-wrap">
+            <img src="assets/images/safari-game-drive.jpg" alt="Big 5 Private Game Reserve Safari Day Trip" />
+            <span class="tour-badge-top">African Wildlife</span>
+            <span class="tour-duration-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Full Day (8–9 Hrs)
+            </span>
+          </div>
+          <div class="tour-body">
+            <h3 class="tour-title">Big 5 Private Game Reserve Safari Day Trip</h3>
+            <p class="tour-summary">
+              Track lions, elephants, rhinos, buffalo, and giraffes in an open 4x4 safari vehicle at a premier malaria-free private game reserve near Cape Town.
+            </p>
+            <ul class="tour-highlights">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Private chauffeur transfer through scenic mountain passes</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Guided open 4x4 game drive with experienced wildlife ranger</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Welcome drinks &amp; full lunch at the luxury safari lodge</span>
+              </li>
+            </ul>
+            <div class="tour-meta-bar">
+              <small>Private Chauffeur Rate</small>
+              <strong>Custom Group Quote</strong>
+            </div>
+            <div class="tour-actions">
+              <button type="button" class="btn-outline-dark" data-modal="safari">View Itinerary</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tour 5 -->
+        <article class="tour-card" id="whales" data-category="wildlife">
+          <div class="tour-img-wrap">
+            <img src="assets/images/hermanus-whale.jpg" alt="Hermanus Whale Watching and Marine Big 5" />
+            <span class="tour-badge-top">Ocean &amp; Coast</span>
+            <span class="tour-duration-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Full Day (8–10 Hrs)
+            </span>
+          </div>
+          <div class="tour-body">
+            <h3 class="tour-title">Hermanus Whale Watching &amp; Marine Big 5</h3>
+            <p class="tour-summary">
+              Journey along scenic Clarens Drive to Betty's Bay penguins, Hermanus cliffside whale watching, or Gansbaai shark cage diving &amp; ocean safaris.
+            </p>
+            <ul class="tour-highlights">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Clarens Drive &amp; Stony Point Penguin Colony</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Hermanus cliff paths, boat whale watching &amp; Hemel-en-Aarde wines</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Optional Gansbaai Shark Cage Diving expedition</span>
+              </li>
+            </ul>
+            <div class="tour-meta-bar">
+              <small>Private Chauffeur Rate</small>
+              <strong>Custom Group Quote</strong>
+            </div>
+            <div class="tour-actions">
+              <button type="button" class="btn-outline-dark" data-modal="marine">View Itinerary</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tour 6 -->
+        <article class="tour-card" id="transfers" data-category="custom">
+          <div class="tour-img-wrap">
+            <img src="assets/images/camps-bay-sunset.jpg" alt="Bespoke Multi-Day Tours and VIP Airport Transfers" />
+            <span class="tour-badge-top">Bespoke &amp; VIP</span>
+            <span class="tour-duration-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Flexible Duration
+            </span>
+          </div>
+          <div class="tour-body">
+            <h3 class="tour-title">Custom Private Tours &amp; VIP Airport Transfers</h3>
+            <p class="tour-summary">
+              Design your dream daily or multi-day itinerary, or book flight-tracked VIP transfers between Cape Town International Airport (CPT), cruise ships, and hotels.
+            </p>
+            <ul class="tour-highlights">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>CPT Airport &amp; Cruise Terminal personal meet-and-greet</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Build-your-own daily itinerary at your own schedule</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Multi-day Garden Route, West Coast &amp; Cape Agulhas trips</span>
+              </li>
+            </ul>
+            <div class="tour-meta-bar">
+              <small>Private Chauffeur Rate</small>
+              <strong>Custom Group Quote</strong>
+            </div>
+            <div class="tour-actions">
+              <button type="button" class="btn-outline-dark" data-modal="custom">View Details</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WHAT'S INCLUDED IN EVERY PRIVATE TOUR ==================== -->
+  <section class="included-section">
+    <div class="container">
+      <div class="catalog-header" style="margin-bottom:0;">
+        <div class="section-pill">
+          <span class="section-pill-dot"></span>
+          <span>THE PRIVATE GUIDE ADVANTAGE</span>
+        </div>
+        <h2>Included with every <span class="serif-accent">private tour.</span></h2>
+        <p>From the moment we collect you at your hotel or cruise ship, every detail is handled for a seamless day out.</p>
+      </div>
+
+      <div class="included-grid">
+        <div class="included-card">
+          <div class="included-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3>Accredited Local Guide</h3>
+          <p>Personally guided by Louis Hendry (Western Cape Reg. WC 16800) with authentic insider history and storytelling.</p>
+        </div>
+
+        <div class="included-card">
+          <div class="included-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1"><path d="M5 17h14v-5l-2.2-5.2A2 2 0 0 0 14.96 5.5H9.04a2 2 0 0 0-1.84 1.3L5 12v5Z"/><circle cx="7.5" cy="17.5" r="2"/><circle cx="16.5" cy="17.5" r="2"/></svg>
+          </div>
+          <h3>Private Air-Con Vehicle</h3>
+          <p>Exclusive vehicle for your group—including fuel, road tolls (Chapman's Peak), and parking fees.</p>
+        </div>
+
+        <div class="included-card">
+          <div class="included-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Door-to-Door Pickup</h3>
+          <p>Complimentary collection and drop-off at your Cape Town hotel, guesthouse, V&amp;A Waterfront, Cruise Port, or CPT Airport.</p>
+        </div>
+
+        <div class="included-card">
+          <div class="included-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1"><circle cx="12" cy="12" r="9.5"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+          </div>
+          <h3>Chilled Water &amp; Concierge</h3>
+          <p>Complimentary bottled water on board plus assistance booking restaurants, wine estates, and skip-the-line tickets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BOTTOM SCENIC BANNER ==================== -->
+  <section class="story-banner">
+    <img src="assets/images/camps-bay-sunset.jpg" alt="Breathtaking golden sunset over Cape Town and Table Mountain" class="story-banner-bg" />
+    <div class="container story-content">
+      <div class="story-pill">
+        <span class="section-pill-dot"></span>
+        <span>START YOUR JOURNEY</span>
+      </div>
+      <h2>
+        Your next story<br />starts in <span class="serif-accent" style="color:var(--gold-soft);">Cape Town.</span>
+      </h2>
+      <p class="story-sub">
+        Chat directly with Louis Hendry to craft a private itinerary tailored to your dates, interests, and group size.
+      </p>
+      <div class="story-actions">
+        <a href="https://wa.me/27840607488?text=Hello%20Louis!%20Let's%20plan%20an%20unforgettable%20Cape%20Town%20adventure." target="_blank" rel="noopener" class="btn-red">
+          <svg class="wa-official-icon" viewBox="0 0 24 24"><path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.761.459 3.479 1.331 4.992L2 22l5.182-1.359c1.466.8 3.116 1.225 4.849 1.226h.004c5.515 0 9.965-4.452 9.965-9.968 0-2.663-1.037-5.167-2.92-7.05A9.905 9.905 0 0 0 12.031 2zm5.821 14.262c-.246.693-1.434 1.326-1.988 1.409-.508.076-1.151.108-1.858-.117-.428-.136-.979-.318-1.685-.623-2.966-1.281-4.902-4.269-5.05-4.467-.148-.198-1.206-1.605-1.206-3.061 0-1.456.763-2.172 1.034-2.468.271-.296.591-.37.788-.37.197 0 .394.002.566.01.182.009.426-.069.665.508.246.593.837 2.049.911 2.197.074.148.123.321.025.518-.099.198-.148.321-.296.494-.148.173-.311.386-.443.518-.148.148-.302.309-.13.605.172.296.766 1.264 1.645 2.047 1.13 1.007 2.083 1.319 2.379 1.467.296.148.468.123.64-.074.173-.198.739-.864.936-1.16.197-.296.394-.247.665-.148.271.099 1.724.813 2.02.961.296.148.493.222.567.346.074.123.074.716-.172 1.409z"/></svg>
+          <span>WhatsApp Us Now</span>
+        </a>
+        <a href="contact.html" class="btn-outline-cream">
+          <span>Custom Inquiry Form</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <div class="footer-brand-head">
+            <img src="assets/logo.png" alt="Unlock Cape Town Tours Logo" />
+            <div>
+              <div class="footer-brand-title">Unlock Cape Town Tours</div>
+              <div class="footer-brand-sub">Explore • Discover • Experience</div>
+            </div>
+          </div>
+          <p class="footer-bio">
+            Bespoke private tours, coastal odysseys, Winelands tastings, and safari day trips across the Western Cape—personally guided with authentic local passion.
+          </p>
+          <div class="footer-accreditation">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            <span>Accredited Guide: Louis Hendry • WC 16800</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="home2.html"><span class="bullet">›</span> Home</a></li>
+            <li><a href="about.html"><span class="bullet">›</span> About Us</a></li>
+            <li><a href="tours.html"><span class="bullet">›</span> Our Tours</a></li>
+            <li><a href="travel-guide.html"><span class="bullet">›</span> Travel Guide</a></li>
+            <li><a href="gallery.html"><span class="bullet">›</span> Gallery</a></li>
+            <li><a href="contact.html"><span class="bullet">›</span> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Popular Experiences</h4>
+          <ul class="footer-links">
+            <li><a href="#peninsula"><span class="bullet">›</span> Cape Peninsula &amp; Penguins</a></li>
+            <li><a href="#winelands"><span class="bullet">›</span> Stellenbosch &amp; Franschhoek</a></li>
+            <li><a href="#city"><span class="bullet">›</span> Table Mountain &amp; Bo-Kaap</a></li>
+            <li><a href="#safari"><span class="bullet">›</span> Big 5 Private Game Safari</a></li>
+            <li><a href="#whales"><span class="bullet">›</span> Hermanus &amp; Marine Big 5</a></li>
+            <li><a href="#transfers"><span class="bullet">›</span> VIP Airport Transfers (CPT)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Get In Touch</h4>
+          <div class="footer-contact-cards">
+            <a href="https://wa.me/27840607488" target="_blank" rel="noopener" class="footer-contact-item">
+              <span class="contact-dot dot-wa">
+                <svg class="wa-official-icon" width="18" height="18" viewBox="0 0 24 24"><path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.761.459 3.479 1.331 4.992L2 22l5.182-1.359c1.466.8 3.116 1.225 4.849 1.226h.004c5.515 0 9.965-4.452 9.965-9.968 0-2.663-1.037-5.167-2.92-7.05A9.905 9.905 0 0 0 12.031 2zm5.821 14.262c-.246.693-1.434 1.326-1.988 1.409-.508.076-1.151.108-1.858-.117-.428-.136-.979-.318-1.685-.623-2.966-1.281-4.902-4.269-5.05-4.467-.148-.198-1.206-1.605-1.206-3.061 0-1.456.763-2.172 1.034-2.468.271-.296.591-.37.788-.37.197 0 .394.002.566.01.182.009.426-.069.665.508.246.593.837 2.049.911 2.197.074.148.123.321.025.518-.099.198-.148.321-.296.494-.148.173-.311.386-.443.518-.148.148-.302.309-.13.605.172.296.766 1.264 1.645 2.047 1.13 1.007 2.083 1.319 2.379 1.467.296.148.468.123.64-.074.173-.198.739-.864.936-1.16.197-.296.394-.247.665-.148.271.099 1.724.813 2.02.961.296.148.493.222.567.346.074.123.074.716-.172 1.409z"/></svg>
+              </span>
+              <div class="footer-contact-info">
+                <small>WhatsApp &amp; Direct Call</small>
+                <strong>084 060 7488 (+27 84 060 7488)</strong>
+              </div>
+            </a>
+
+            <a href="mailto:info@unlockcapetowntours.co.za" class="footer-contact-item">
+              <span class="contact-dot dot-mail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </span>
+              <div class="footer-contact-info">
+                <small>Email Us</small>
+                <strong>info@unlockcapetowntours.co.za</strong>
+              </div>
+            </a>
+
+            <a href="https://www.unlockcapetowntours.co.za" target="_blank" rel="noopener" class="footer-contact-item">
+              <span class="contact-dot dot-web">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </span>
+              <div class="footer-contact-info">
+                <small>Official Website</small>
+                <strong>www.unlockcapetowntours.co.za</strong>
+              </div>
+            </a>
+          </div>
+
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/unlockcapetowntours" target="_blank" rel="noopener" class="social-circle social-fb" aria-label="Facebook">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/unlockcapetowntours" target="_blank" rel="noopener" class="social-circle social-ig" aria-label="Instagram">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="https://wa.me/27840607488" target="_blank" rel="noopener" class="social-circle social-wa" aria-label="WhatsApp">
+              <svg class="wa-official-icon" width="18" height="18" viewBox="0 0 24 24"><path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.761.459 3.479 1.331 4.992L2 22l5.182-1.359c1.466.8 3.116 1.225 4.849 1.226h.004c5.515 0 9.965-4.452 9.965-9.968 0-2.663-1.037-5.167-2.92-7.05A9.905 9.905 0 0 0 12.031 2zm5.821 14.262c-.246.693-1.434 1.326-1.988 1.409-.508.076-1.151.108-1.858-.117-.428-.136-.979-.318-1.685-.623-2.966-1.281-4.902-4.269-5.05-4.467-.148-.198-1.206-1.605-1.206-3.061 0-1.456.763-2.172 1.034-2.468.271-.296.591-.37.788-.37.197 0 .394.002.566.01.182.009.426-.069.665.508.246.593.837 2.049.911 2.197.074.148.123.321.025.518-.099.198-.148.321-.296.494-.148.173-.311.386-.443.518-.148.148-.302.309-.13.605.172.296.766 1.264 1.645 2.047 1.13 1.007 2.083 1.319 2.379 1.467.296.148.468.123.64-.074.173-.198.739-.864.936-1.16.197-.296.394-.247.665-.148.271.099 1.724.813 2.02.961.296.148.493.222.567.346.074.123.074.716-.172 1.409z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Unlock Cape Town Tours. All rights reserved. Western Cape Tourist Guide Reg. WC 16800.
+        </div>
+        <div>
+          <a href="#">Back to Top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== ITINERARY MODAL ==================== -->
+  <div class="modal-backdrop" id="itineraryModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <div class="modal-head">
+        <button type="button" class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+        <span class="modal-tag" id="modalTag">Full-Day Private Tour</span>
+        <h3 class="modal-title" id="modalTitle">Tour Itinerary</h3>
+        <p class="modal-desc" id="modalDesc"></p>
+      </div>
+      <div class="modal-body">
+        <ul class="modal-stops" id="modalStops"></ul>
+        <div class="modal-perks">
+          <span>✓ 100% Private Vehicle &amp; Chauffeur</span>
+          <span>✓ Accredited Guide: Louis Hendry (WC 16800)</span>
+          <span>✓ Complimentary Hotel / CPT Pickup</span>
+        </div>
+        <div class="modal-actions">
+          <a href="#" id="modalWaBtn" target="_blank" rel="noopener" class="btn-wa-green" style="flex:1;">
+            <svg class="wa-official-icon" width="19" height="19" viewBox="0 0 24 24"><path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.761.459 3.479 1.331 4.992L2 22l5.182-1.359c1.466.8 3.116 1.225 4.849 1.226h.004c5.515 0 9.965-4.452 9.965-9.968 0-2.663-1.037-5.167-2.92-7.05A9.905 9.905 0 0 0 12.031 2zm5.821 14.262c-.246.693-1.434 1.326-1.988 1.409-.508.076-1.151.108-1.858-.117-.428-.136-.979-.318-1.685-.623-2.966-1.281-4.902-4.269-5.05-4.467-.148-.198-1.206-1.605-1.206-3.061 0-1.456.763-2.172 1.034-2.468.271-.296.591-.37.788-.37.197 0 .394.002.566.01.182.009.426-.069.665.508.246.593.837 2.049.911 2.197.074.148.123.321.025.518-.099.198-.148.321-.296.494-.148.173-.311.386-.443.518-.148.148-.302.309-.13.605.172.296.766 1.264 1.645 2.047 1.13 1.007 2.083 1.319 2.379 1.467.296.148.468.123.64-.074.173-.198.739-.864.936-1.16.197-.296.394-.247.665-.148.271.099 1.724.813 2.02.961.296.148.493.222.567.346.074.123.074.716-.172 1.409z"/></svg>
+            <span>Inquire &amp; Book on WhatsApp</span>
+          </a>
+          <a href="contact.html" class="btn-outline-dark">Use Inquiry Form</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== FLOATING WHATSAPP CHATBOT ==================== -->
+  <div class="wa-chatbot" id="waChatbot">
+    <div class="wa-chat-window" role="dialog" aria-label="WhatsApp Concierge Chat">
+      <div class="wa-chat-header">
+        <div class="wa-chat-profile">
+          <div class="wa-chat-avatar-wrap">
+            <img src="assets/logo.png" alt="Louis Hendry - Unlock Cape Town" />
+            <span class="wa-online-dot"></span>
+          </div>
+          <div class="wa-chat-profile-info">
+            <strong>Louis Hendry</strong>
+            <span>Accredited Guide (WC 16800) • Online</span>
+          </div>
+        </div>
+        <button type="button" class="wa-chat-close" id="waChatClose" aria-label="Close chat">&times;</button>
+      </div>
+
+      <div class="wa-chat-body">
+        <div class="wa-msg-bubble">
+          <div class="wa-msg-sender">
+            <span>Louis Hendry</span>
+            <small>Just now</small>
+          </div>
+          Hi there! 👋 Welcome to <strong>Unlock Cape Town Tours</strong>. Which private tour can I help you plan today?
+        </div>
+
+        <span class="wa-quick-label">Quick Inquiries:</span>
+        <div class="wa-quick-chips">
+          <button type="button" class="wa-chip" data-msg="Hi Louis! I'd love to inquire about the Cape Peninsula & Penguins private tour.">🐧 Peninsula &amp; Penguins</button>
+          <button type="button" class="wa-chip" data-msg="Hi Louis! I'd love to inquire about a private Cape Winelands tour (Stellenbosch & Franschhoek).">🍷 Cape Winelands</button>
+          <button type="button" class="wa-chip" data-msg="Hi Louis! I'd love to inquire about the Table Mountain & Mother City tour.">⛰️ Table Mountain &amp; City</button>
+          <button type="button" class="wa-chip" data-msg="Hi Louis! I'd love to inquire about a Big 5 Private Safari day trip.">🦁 Big 5 Safari</button>
+          <button type="button" class="wa-chip" data-msg="Hi Louis! I need a VIP Airport Transfer / Custom Multi-Day Itinerary quote.">✈️ Airport / Custom Quote</button>
+        </div>
+      </div>
+
+      <form class="wa-chat-footer" id="waChatForm">
+        <input type="text" class="wa-chat-input" id="waChatInput" placeholder="Type your message to Louis..." autocomplete="off" />
+        <button type="submit" class="wa-chat-send" aria-label="Send on WhatsApp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </form>
+    </div>
+
+    <button type="button" class="wa-launcher" id="waLauncher" aria-label="Open WhatsApp Chat">
+      <span class="wa-launcher-badge">1</span>
+      <svg class="wa-official-icon" viewBox="0 0 24 24"><path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.761.459 3.479 1.331 4.992L2 22l5.182-1.359c1.466.8 3.116 1.225 4.849 1.226h.004c5.515 0 9.965-4.452 9.965-9.968 0-2.663-1.037-5.167-2.92-7.05A9.905 9.905 0 0 0 12.031 2zm5.821 14.262c-.246.693-1.434 1.326-1.988 1.409-.508.076-1.151.108-1.858-.117-.428-.136-.979-.318-1.685-.623-2.966-1.281-4.902-4.269-5.05-4.467-.148-.198-1.206-1.605-1.206-3.061 0-1.456.763-2.172 1.034-2.468.271-.296.591-.37.788-.37.197 0 .394.002.566.01.182.009.426-.069.665.508.246.593.837 2.049.911 2.197.074.148.123.321.025.518-.099.198-.148.321-.296.494-.148.173-.311.386-.443.518-.148.148-.302.309-.13.605.172.296.766 1.264 1.645 2.047 1.13 1.007 2.083 1.319 2.379 1.467.296.148.468.123.64-.074.173-.198.739-.864.936-1.16.197-.296.394-.247.665-.148.271.099 1.724.813 2.02.961.296.148.493.222.567.346.074.123.074.716-.172 1.409z"/></svg>
+      <span>Chat on WhatsApp</span>
+    </button>
+  </div>
+
+  <script>
+    (function () {
+      const phone = '27840607488';
+
+      // Mobile Navigation Toggle
+      const mobileToggle = document.getElementById('mobileMenuToggle');
+      const mainNav = document.getElementById('mainNav');
+      if (mobileToggle && mainNav) {
+        mobileToggle.addEventListener('click', function () {
+          const isOpen = mainNav.classList.toggle('open');
+          mobileToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+        mainNav.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function () {
+            mainNav.classList.remove('open');
+            mobileToggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+
+      // Category Filtering
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const tourCards = document.querySelectorAll('.tour-card');
+      filterBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const cat = btn.getAttribute('data-filter');
+          tourCards.forEach(function (card) {
+            if (cat === 'all' || card.getAttribute('data-category') === cat) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Tour Itinerary Modal Data
+      const itineraries = {
+        peninsula: {
+          tag: 'Full Day • 8–9 Hours • 100% Private',
+          title: 'Cape Peninsula & Boulders Penguins Odyssey',
+          desc: 'Our most requested full-day coastal experience—combining dramatic mountain passes, ocean wildlife, and Cape Point.',
+          stops: [
+            ['Stop 1: Atlantic Seaboard, Clifton & Camps Bay', 'Scenic coastal drive past Lion’s Head and the Twelve Apostles mountain range with photo stops at Maiden’s Cove.'],
+            ['Stop 2: Hout Bay Harbour (Optional Seal Island Boat Cruise)', 'Explore the working fishing harbour or take a 45-minute boat trip to Duiker Island to see thousands of Cape Fur Seals.'],
+            ['Stop 3: Chapman’s Peak Drive', 'Travel one of the world’s most breathtaking cliffside coastal roads with unhurried viewpoint stops.'],
+            ['Stop 4: Cape of Good Hope & Cape Point Nature Reserve', 'Visit the iconic Cape of Good Hope sign and ride the Flying Dutchman Funicular or walk up to the historic Cape Point Lighthouse.'],
+            ['Stop 5: Boulders Beach African Penguin Colony & Simon’s Town', 'Walk the boardwalks alongside hundreds of wild African Penguins on white granite boulders, followed by a coastal lunch in Simon’s Town or Kalk Bay.']
+          ]
+        },
+        winelands: {
+          tag: 'Full Day • 8 Hours • Wine & Gastronomy',
+          title: 'Cape Winelands: Stellenbosch, Franschhoek & Paarl',
+          desc: 'A tailored journey through South Africa’s premier wine valleys, customized to the varietals and estates you love.',
+          stops: [
+            ['Stop 1: Historic Stellenbosch & Estate Cellar Tasting', 'Stroll oak-lined Dorp Street and enjoy a morning cellar tour and tasting at a premier Stellenbosch estate.'],
+            ['Stop 2: Helshoogte Pass & Boutique Wine / Cheese Pairing', 'Cross the dramatic Helshoogte mountain pass for a curated wine, artisan cheese, or chocolate pairing.'],
+            ['Stop 3: Franschhoek Valley & Vineyard Lunch', 'Explore South Africa’s culinary capital, visit the Huguenot Monument, and enjoy a relaxed lunch overlooking the vines.'],
+            ['Stop 4: Afternoon Cap Classique / Paarl Estate Tasting', 'Conclude with a sparkling Méthode Cap Classique or flagship red tasting before your private chauffeur drive back to Cape Town.']
+          ]
+        },
+        city: {
+          tag: 'Half or Full Day • 4–8 Hours • Culture & Icons',
+          title: 'Table Mountain & Mother City Discovery',
+          desc: 'Uncover the natural wonder and rich cultural tapestry of South Africa’s oldest city at your own pace.',
+          stops: [
+            ['Stop 1: Table Mountain Aerial Cableway & Signal Hill', 'Ride the rotating cable car to the summit of Table Mountain (weather permitting) for 360° views of Cape Town and Robben Island.'],
+            ['Stop 2: Vibrant Bo-Kaap & Cape Malay Quarter', 'Walk the colourful cobbled streets of Bo-Kaap, visit the spice shops, and hear the inspiring history of the community.'],
+            ['Stop 3: Company’s Garden, Castle of Good Hope & City Bowl', 'Discover the historic heart of Cape Town, Parliament buildings, Greenmarket Square, and Slave Lodge heritage.'],
+            ['Stop 4: Kirstenbosch Botanical Gardens or V&A Waterfront', 'Extend to a full day with a walk along the Boomslang canopy walkway at Kirstenbosch National Botanical Garden.']
+          ]
+        },
+        safari: {
+          tag: 'Full Day • 8–9 Hours • Malaria-Free Wildlife',
+          title: 'Big 5 Private Game Reserve Safari Day Trip',
+          desc: 'Experience an authentic African Big 5 safari in a single day from Cape Town with private door-to-door chauffeur transfers.',
+          stops: [
+            ['Stop 1: Morning Hotel Pickup & Hex River Mountain Pass', 'Relax in air-conditioned comfort as Louis drives you through the Winelands and scenic Worcester/Hex River valleys.'],
+            ['Stop 2: Welcome Drinks & Reserve Arrival', 'Arrive at a premier malaria-free private game reserve (such as Aquila or Inverdoorn) for welcome refreshments.'],
+            ['Stop 3: 2.5–3 Hour Open 4x4 Big 5 Game Drive', 'Track lion, elephant, rhino, buffalo, leopard, giraffe, hippo, and zebra with an expert wildlife ranger.'],
+            ['Stop 4: Safari Lodge Lunch & Scenic Return', 'Enjoy a generous lunch at the reserve lodge before a relaxed scenic drive back to your Cape Town accommodation.']
+          ]
+        },
+        marine: {
+          tag: 'Full Day • 8–10 Hours • Ocean & Coast',
+          title: 'Hermanus Whale Watching & Marine Big 5',
+          desc: 'Follow the spectacular False Bay and Overberg coastline for land or boat-based whale watching, penguins, and ocean adventure.',
+          stops: [
+            ['Stop 1: Sir Lowry’s Pass & Scenic Clarens Drive', 'Enjoy sweeping coastal panoramas along False Bay and the dramatic cliffs of Clarens Drive.'],
+            ['Stop 2: Betty’s Bay Stony Point Penguin Colony', 'Visit one of the most peaceful, uncrowded coastal African Penguin colonies in the Western Cape.'],
+            ['Stop 3: Hermanus Cliff Paths or Boat Whale Watching', 'Experience the world capital of land-based Southern Right Whale watching (June–Nov) or join a Marine Big 5 / Shark Cage Diving boat in Gansbaai.'],
+            ['Stop 4: Hemel-en-Aarde Valley Cool-Climate Wines', 'Optional afternoon Pinot Noir & Chardonnay tasting in the famous Hemel-en-Aarde ("Heaven and Earth") valley.']
+          ]
+        },
+        custom: {
+          tag: 'Flexible Duration • Bespoke & VIP Chauffeur',
+          title: 'Custom Private Tours & VIP Airport Transfers',
+          desc: 'Total flexibility—whether you need a reliable CPT airport meet-and-greet or a multi-day Garden Route expedition.',
+          stops: [
+            ['VIP Airport & Cruise Terminal Transfers (CPT)', 'Flight-tracked meet-and-greet at Cape Town International Airport or Cape Town Cruise Terminal directly to your hotel or Winelands estate.'],
+            ['Build-Your-Own Private Day Charter', 'Combine Peninsula & Winelands highlights, photography spots, or family-friendly attractions on your own schedule.'],
+            ['Multi-Day Garden Route, West Coast & Cape Agulhas', 'Custom multi-day private tours to the Southernmost Tip of Africa (Cape Agulhas), Cederberg, West Coast wildflowers, or the Garden Route.']
+          ]
+        }
+      };
+
+      const modal = document.getElementById('itineraryModal');
+      const modalClose = document.getElementById('modalCloseBtn');
+      const modalTag = document.getElementById('modalTag');
+      const modalTitle = document.getElementById('modalTitle');
+      const modalDesc = document.getElementById('modalDesc');
+      const modalStops = document.getElementById('modalStops');
+      const modalWaBtn = document.getElementById('modalWaBtn');
+
+      document.querySelectorAll('[data-modal]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const key = btn.getAttribute('data-modal');
+          const data = itineraries[key];
+          if (!data) return;
+          modalTag.textContent = data.tag;
+          modalTitle.textContent = data.title;
+          modalDesc.textContent = data.desc;
+          modalStops.innerHTML = data.stops.map(function (s, idx) {
+            const num = String(idx + 1).padStart(2, '0');
+            const cleanHeading = s[0].replace(/^Stop\s*\d+\s*:\s*/i, '');
+            return '<li><span class="modal-stop-num">' + num + '</span><div class="modal-stop-text"><strong>' + cleanHeading + '</strong>' + s[1] + '</div></li>';
+          }).join('');
+          modalWaBtn.href = 'https://wa.me/' + phone + '?text=' + encodeURIComponent("Hello Louis! I just viewed the itinerary for the " + data.title + " and would love a private quote.");
+          modal.classList.add('open');
+        });
+      });
+
+      modalClose.addEventListener('click', function () {
+        modal.classList.remove('open');
+      });
+
+      modal.addEventListener('click', function (e) {
+        if (e.target === modal) modal.classList.remove('open');
+      });
+
+      // Floating WhatsApp Chatbot
+      const chatbot = document.getElementById('waChatbot');
+      const launcher = document.getElementById('waLauncher');
+      const closeBtn = document.getElementById('waChatClose');
+      const form = document.getElementById('waChatForm');
+      const input = document.getElementById('waChatInput');
+      const chips = document.querySelectorAll('.wa-chip');
+
+      launcher.addEventListener('click', function () {
+        chatbot.classList.toggle('open');
+        if (chatbot.classList.contains('open')) {
+          setTimeout(() => input.focus(), 150);
+        }
+      });
+
+      closeBtn.addEventListener('click', function () {
+        chatbot.classList.remove('open');
+      });
+
+      chips.forEach(function (chip) {
+        chip.addEventListener('click', function () {
+          const msg = chip.getAttribute('data-msg');
+          window.open('https://wa.me/' + phone + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+        });
+      });
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const text = (input.value || '').trim() || "Hello Louis! I'd love to inquire about a private Cape Town tour.";
+        window.open('https://wa.me/' + phone + '?text=' + encodeURIComponent(text), '_blank', 'noopener');
+        input.value = '';
+      });
+    })();
+  </script>
+</body>
+</html>

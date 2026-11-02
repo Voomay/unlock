@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>~*~ UNLOCK CAPE TOWN TOURS HomePage ~*~ (WC 16800)</title>
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <style>
+    /* UGLY RETRO 1998 GEOCITIES / FRONTPAGE PRANK STYLESHEET */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #008080;
+      background-image:
+        radial-gradient(#ffff00 1px, transparent 1px),
+        radial-gradient(#ff00ff 1px, #004040 1px);
+      background-size: 28px 28px;
+      background-position: 0 0, 14px 14px;
+      color: #ffff00;
+      font-family: "Times New Roman", Times, serif;
+      overflow-x: hidden;
+      cursor: crosshair;
+    }
+
+    /* Blinking animation */
+    @keyframes blinkText {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+
+    @keyframes spinWobble {
+      0% { transform: rotate(-6deg) scale(1.05, 0.82); }
+      50% { transform: rotate(5deg) scale(0.88, 1.12); }
+      100% { transform: rotate(-6deg) scale(1.05, 0.82); }
+    }
+
+    .blink {
+      animation: blinkText 0.85s infinite;
+    }
+
+    /* Top construction tape */
+    .construction-strip {
+      background: repeating-linear-gradient(
+        45deg,
+        #ffcc00,
+        #ffcc00 20px,
+        #000000 20px,
+        #000000 40px
+      );
+      padding: 8px;
+      text-align: center;
+      border-bottom: 5px ridge #ff00ff;
+    }
+
+    .construction-strip span {
+      background: #000000;
+      color: #00ff00;
+      font-family: "Courier New", monospace;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 3px 12px;
+      border: 2px solid #ffff00;
+    }
+
+    /* Marquee bars */
+    .marquee-top {
+      background-color: #ffff00;
+      color: #ff0000;
+      font-family: "Comic Sans MS", "Chalkboard SE", cursive, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 6px 0;
+      border-bottom: 6px groove #0000ff;
+    }
+
+    .marquee-sub {
+      background-color: #ff00ff;
+      color: #ffffff;
+      font-family: "Courier New", monospace;
+      font-size: 15px;
+      font-weight: bold;
+      padding: 4px 0;
+      border-bottom: 4px outset #00ffff;
+    }
+
+    /* Main two-column layout so the right side has the ugly retro form where it was blank */
+    .retro-master-layout {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      max-width: 1440px;
+      margin: 16px auto 70px auto;
+      padding: 0 16px;
+    }
+
+    /* Left column wrapper */
+    .page-wrap {
+      flex: 1 1 68%;
+      min-width: 0;
+      padding: 14px;
+      background-color: #c0c0c0;
+      border: 10px ridge #dfdfdf;
+      color: #000000;
+      box-shadow: 14px 18px 0px #000000;
+    }
+
+    /* Right column: UGLY RETRO SIDEBAR FORM where it was blank */
+    .ugly-side-column {
+      flex: 0 0 390px;
+      width: 390px;
+      background: #ffff00;
+      border: 9px outset #ff00ff;
+      padding: 12px;
+      color: #000080;
+      box-shadow: 12px 16px 0px #000000;
+      transform: rotate(0.8deg);
+      margin-top: 6px;
+    }
+
+    /* Header WITH overly-retro distorted logo + WordArt text */
+    .ugly-header {
+      background: linear-gradient(90deg, #000080, #800080, #008000);
+      border: 6px inset #ffff00;
+      padding: 18px 12px 24px 20px;
+      margin-left: -14px;
+      margin-right: 12px;
+      position: relative;
+    }
+
+    .retro-logo-box {
+      display: inline-block;
+      background: repeating-linear-gradient(
+        135deg,
+        #ffff00,
+        #ffff00 8px,
+        #00ffff 8px,
+        #00ffff 16px
+      );
+      border: 7px ridge #00ff00;
+      padding: 8px 12px;
+      vertical-align: middle;
+      margin-right: 14px;
+      margin-top: -6px;
+      box-shadow: 6px 6px 0px #ff0000;
+      transform: rotate(-5.5deg);
+      text-align: center;
+    }
+
+    .retro-logo-box img {
+      width: 155px;
+      height: 112px; /* Squished aspect ratio */
+      display: block;
+      border: 4px inset #ff00ff;
+      background: #ffffff;
+      /* Over-the-top retro 90s GIF posterized / harsh contrast filter */
+      filter: contrast(235%) saturate(320%) sepia(25%) hue-rotate(-12deg) drop-shadow(4px 4px 0px #0000ff);
+      image-rendering: pixelated;
+      animation: spinWobble 4s ease-in-out infinite;
+    }
+
+    .retro-logo-tag {
+      display: block;
+      background: #ff0000;
+      color: #ffff00;
+      font-family: "Courier New", monospace;
+      font-size: 11px;
+      font-weight: bold;
+      margin-top: 4px;
+      padding: 2px 4px;
+      border: 2px dotted #ffffff;
+    }
+
+    .wordart-title {
+      display: inline-block;
+      vertical-align: middle;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: 42px;
+      color: #00ff00;
+      text-shadow:
+        4px 4px 0px #ff0000,
+        -2px -2px 0px #ffff00,
+        7px 7px 0px #000000;
+      letter-spacing: 2px;
+      transform: skewX(-12deg) rotate(1.5deg);
+      margin: 4px 0 8px 4px;
+      line-height: 1.05;
+    }
+
+    .ugly-subtitle {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      background: #ffff00;
+      color: #0000ff;
+      font-size: 18px;
+      font-weight: bold;
+      display: table;
+      padding: 4px 14px;
+      margin-left: 48px;
+      margin-top: 10px;
+      border: 4px dashed #ff0000;
+      transform: rotate(-1.2deg);
+    }
+
+    /* Misaligned 90s button nav */
+    .ugly-nav {
+      margin: 16px 0 12px -10px;
+      padding: 10px;
+      background: #808000;
+      border: 5px outset #ffffff;
+      text-align: left;
+    }
+
+    .ugly-nav a {
+      display: inline-block;
+      background: #c0c0c0;
+      border: 4px outset #ffffff;
+      color: #0000ff;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+      padding: 5px 10px;
+      text-decoration: underline;
+    }
+
+    .ugly-nav a:nth-child(1) { margin-left: 4px; transform: translateY(-4px); background: #00ffff; }
+    .ugly-nav a:nth-child(2) { margin-left: 22px; transform: translateY(5px) rotate(2deg); background: #ffff00; }
+    .ugly-nav a:nth-child(3) { margin-left: 7px; transform: translateY(-3px) rotate(-2deg); background: #ff99ff; }
+    .ugly-nav a:nth-child(4) { margin-left: 28px; transform: translateY(6px); background: #99ff66; }
+    .ugly-nav a:nth-child(5) { margin-left: 12px; transform: translateY(-5px) rotate(3deg); }
+
+    /* Continue Button Box (Top & Bottom) */
+    .continue-banner {
+      background: #000080;
+      border: 7px ridge #00ffff;
+      padding: 14px 18px;
+      margin: 18px 10px 24px 20px;
+      text-align: center;
+      color: #ffffff;
+      position: relative;
+    }
+
+    .continue-banner p {
+      margin: 0 0 10px 0;
+      font-family: "Courier New", monospace;
+      font-size: 15px;
+      color: #ffff00;
+      font-weight: bold;
+    }
+
+    .continue-btn {
+      display: inline-block;
+      background: #00ff00;
+      color: #000000;
+      font-family: "Comic Sans MS", "Arial Black", sans-serif;
+      font-size: 22px;
+      font-weight: 900;
+      text-decoration: none;
+      padding: 10px 32px;
+      border: 6px outset #ffffff;
+      box-shadow: 6px 6px 0px #ff0000;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .continue-btn:hover {
+      background: #ffff00;
+      color: #ff0000;
+      border-style: inset;
+    }
+
+    /* Misaligned pictures and ugly table sections */
+    .chaotic-section {
+      background: #ffccff;
+      border: 6px groove #ff0000;
+      padding: 16px;
+      margin: 22px -10px 28px 16px;
+      overflow: visible;
+    }
+
+    .chaotic-title {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      font-size: 26px;
+      color: #ff0000;
+      background: #00ffff;
+      border: 4px solid #0000ff;
+      display: inline-block;
+      padding: 4px 14px;
+      margin-left: 35px;
+      margin-top: -28px;
+      transform: rotate(2.2deg);
+    }
+
+    /* Intentionally misaligned photos */
+    .bad-photo-row {
+      position: relative;
+      padding: 15px 0 28px 0;
+    }
+
+    .bad-photo-1 {
+      display: inline-block;
+      vertical-align: top;
+      width: 340px;
+      margin-left: -18px;
+      margin-top: 14px;
+      border: 9px ridge #00ff00;
+      background: #ffff00;
+      padding: 6px;
+      transform: rotate(-3.5deg);
+    }
+
+    /* Squished aspect ratio on purpose */
+    .bad-photo-1 img {
+      width: 100%;
+      height: 135px;
+      display: block;
+      border: 3px solid #ff0000;
+    }
+
+    .bad-photo-2 {
+      display: inline-block;
+      vertical-align: top;
+      width: 210px;
+      margin-left: 38px;
+      margin-top: -24px;
+      border: 8px dashed #0000ff;
+      background: #00ffff;
+      padding: 12px 4px 4px 14px;
+      transform: rotate(5.2deg);
+    }
+
+    /* Stretched tall & skinny on purpose */
+    .bad-photo-2 img {
+      width: 180px;
+      height: 290px;
+      display: block;
+      border: 4px double #ff00ff;
+    }
+
+    .bad-photo-3 {
+      display: inline-block;
+      vertical-align: bottom;
+      width: 310px;
+      margin-left: 65px;
+      margin-top: -32px;
+      border: 10px groove #ff6600;
+      background: #000000;
+      color: #00ff00;
+      padding: 8px;
+      transform: rotate(-2.4deg);
+    }
+
+    .bad-photo-3 img {
+      width: 330px; /* overflows container on purpose! */
+      height: 150px;
+      margin-left: -18px;
+      display: block;
+      border: 3px solid #ffff00;
+    }
+
+    .photo-caption-ugly {
+      font-family: "Courier New", monospace;
+      font-size: 12px;
+      font-weight: bold;
+      color: #000000;
+      background: #ffff00;
+      margin-top: 5px;
+      padding: 3px;
+      border: 2px solid #000;
+      text-align: right;
+    }
+
+    /* Clashing Table of Tours */
+    .ugly-table-wrap {
+      margin-left: -8px;
+      margin-right: 14px;
+      margin-top: 20px;
+    }
+
+    table.retro-table {
+      width: 102%;
+      border: 8px outset #ff00ff;
+      background-color: #ffff99;
+      border-collapse: separate;
+      border-spacing: 6px;
+    }
+
+    table.retro-table th {
+      background-color: #ff0000;
+      color: #ffff00;
+      font-family: "Comic Sans MS", cursive;
+      font-size: 18px;
+      padding: 8px;
+      border: 4px inset #ffffff;
+      text-transform: uppercase;
+    }
+
+    table.retro-table td {
+      border: 4px ridge #0000ff;
+      padding: 8px;
+      font-size: 15px;
+      vertical-align: top;
+    }
+
+    .td-lime {
+      background-color: #00ff00;
+      color: #000080;
+      font-family: "Courier New", monospace;
+      font-weight: bold;
+    }
+
+    .td-cyan {
+      background-color: #00ffff;
+      color: #800000;
+      font-family: "Times New Roman", serif;
+      font-size: 17px;
+    }
+
+    .td-pink {
+      background-color: #ff99cc;
+      color: #003300;
+      font-family: "Comic Sans MS", cursive;
+    }
+
+    /* Second row of crooked images */
+    .crooked-gallery {
+      background: #003366;
+      border: 7px inset #00ff00;
+      padding: 18px;
+      margin: 26px 14px 18px -12px;
+      color: #ffffff;
+    }
+
+    .crooked-img-a {
+      width: 260px;
+      height: 120px;
+      border: 6px solid #ffff00;
+      margin-left: 24px;
+      transform: rotate(3.8deg);
+    }
+
+    .crooked-img-b {
+      width: 160px;
+      height: 220px;
+      border: 7px dotted #ff00ff;
+      margin-left: -12px;
+      margin-top: 20px;
+      transform: rotate(-6deg);
+    }
+
+    .crooked-img-c {
+      width: 240px;
+      height: 155px;
+      border: 9px outset #00ffff;
+      margin-left: 20px;
+      margin-bottom: -14px;
+      transform: rotate(2.5deg);
+    }
+
+    /* Guide box with misaligned photo */
+    .guide-ugly-box {
+      background: #ffff00;
+      border: 8px double #0000ff;
+      padding: 16px;
+      margin: 26px 24px 24px -6px;
+      color: #000000;
+    }
+
+    .guide-ugly-box img {
+      float: right;
+      width: 230px;
+      height: 110px;
+      margin-right: -28px;
+      margin-top: -20px;
+      border: 6px solid #ff0000;
+      transform: rotate(4deg);
+    }
+
+    /* ==================== UGLY RETRO FORM ON THE SIDE ==================== */
+    .ugly-form-header {
+      background: #ff0000;
+      color: #ffff00;
+      border: 5px ridge #00ffff;
+      padding: 8px;
+      text-align: center;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      margin-bottom: 12px;
+      transform: rotate(-1.5deg);
+    }
+
+    .ugly-form-header h2 {
+      margin: 0;
+      font-size: 22px;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 0px #000000;
+    }
+
+    .ugly-form-logo-mini {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #00ffff;
+      border: 4px dashed #ff0000;
+      padding: 6px 10px;
+      margin-bottom: 12px;
+      margin-left: -8px;
+      margin-right: 6px;
+    }
+
+    .ugly-form-logo-mini img {
+      width: 92px;
+      height: 54px; /* squished */
+      border: 3px solid #0000ff;
+      background: #fff;
+      filter: contrast(250%) saturate(300%) invert(8%) drop-shadow(3px 3px 0 #ff00ff);
+      transform: rotate(4deg);
+    }
+
+    .ugly-form-logo-mini span {
+      font-family: "Courier New", monospace;
+      font-size: 12px;
+      font-weight: bold;
+      color: #800000;
+      text-align: right;
+    }
+
+    .retro-fieldset {
+      border: 5px groove #0000ff;
+      background: #c0c0c0;
+      padding: 10px;
+      margin-bottom: 12px;
+    }
+
+    .retro-fieldset legend {
+      background: #000080;
+      color: #00ff00;
+      font-family: "Courier New", monospace;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 3px 8px;
+      border: 3px outset #ffffff;
+    }
+
+    .ugly-field-row {
+      margin-bottom: 11px;
+    }
+
+    .ugly-field-row label {
+      display: block;
+      font-family: "Comic Sans MS", cursive;
+      font-size: 14px;
+      font-weight: bold;
+      color: #800080;
+      margin-bottom: 3px;
+    }
+
+    .ugly-input-text {
+      width: 94%;
+      background: #ffff99;
+      color: #ff0000;
+      font-family: "Courier New", monospace;
+      font-size: 14px;
+      font-weight: bold;
+      border: 4px inset #808080;
+      padding: 5px;
+    }
+
+    .ugly-input-text.skew-right {
+      margin-left: 16px;
+      background: #ccffff;
+      color: #000080;
+      width: 88%;
+    }
+
+    .ugly-select {
+      width: 100%;
+      background: #00ff00;
+      color: #000000;
+      font-family: "Times New Roman", serif;
+      font-size: 15px;
+      font-weight: bold;
+      border: 4px inset #ff00ff;
+      padding: 4px;
+    }
+
+    .ugly-checkbox-box {
+      background: #ffccff;
+      border: 3px dotted #0000ff;
+      padding: 6px;
+      font-family: "Courier New", monospace;
+      font-size: 12.5px;
+      color: #000000;
+      margin-left: -4px;
+    }
+
+    .ugly-textarea {
+      width: 102%;
+      margin-left: -4px;
+      background: #000000;
+      color: #00ff00;
+      font-family: "Courier New", monospace;
+      font-size: 13px;
+      border: 5px inset #00ffff;
+      padding: 6px;
+    }
+
+    .ugly-form-buttons {
+      text-align: center;
+      margin-top: 10px;
+      padding: 8px;
+      background: #800080;
+      border: 4px ridge #ffff00;
+    }
+
+    .btn-90s-submit {
+      background: #00ff00;
+      color: #ff0000;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: 18px;
+      padding: 8px 16px;
+      border: 5px outset #ffffff;
+      cursor: pointer;
+      letter-spacing: 1px;
+      margin-right: 6px;
+      box-shadow: 4px 4px 0px #000000;
+    }
+
+    .btn-90s-reset {
+      background: #ff0000;
+      color: #ffff00;
+      font-family: "Courier New", monospace;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 7px 10px;
+      border: 4px outset #ffffff;
+      cursor: pointer;
+    }
+
+    .side-fax-box {
+      margin-top: 14px;
+      background: #000080;
+      color: #00ffff;
+      border: 5px double #00ff00;
+      padding: 10px;
+      font-family: "Courier New", monospace;
+      font-size: 13px;
+      transform: rotate(-1.4deg);
+    }
+
+    /* Hit counter & retro footer */
+    .hit-counter-box {
+      text-align: center;
+      margin: 22px auto 12px auto;
+      padding: 14px;
+      background: #000000;
+      border: 5px groove #808080;
+      width: 86%;
+      color: #00ff00;
+      font-family: "Courier New", monospace;
+    }
+
+    .counter-digits {
+      display: inline-block;
+      background: #111;
+      color: #ff0000;
+      font-family: "Courier New", monospace;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 6px;
+      padding: 4px 12px;
+      border: 3px inset #555;
+      margin: 6px 0;
+    }
+
+    /* Fixed bottom bar so the Continue button is always easy to click */
+    .sticky-continue-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #c0c0c0;
+      border-top: 5px outset #ffffff;
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 9999;
+      box-shadow: 0 -4px 12px rgba(0,0,0,0.5);
+      font-family: "Courier New", monospace;
+      color: #000000;
+    }
+
+    .sticky-continue-bar .win95-status {
+      font-size: 13px;
+      font-weight: bold;
+      background: #ffffff;
+      border: 2px inset #808080;
+      padding: 4px 10px;
+    }
+
+    .sticky-continue-bar .win95-continue {
+      background: #00ff00;
+      color: #000000;
+      font-family: "Comic Sans MS", "Arial Black", sans-serif;
+      font-weight: 900;
+      font-size: 17px;
+      padding: 6px 24px;
+      border: 4px outset #ffffff;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .sticky-continue-bar .win95-continue:hover {
+      background: #ffff00;
+      color: #ff0000;
+    }
+
+    @media (max-width: 1080px) {
+      .retro-master-layout {
+        flex-direction: column;
+      }
+      .ugly-side-column {
+        width: 100%;
+        flex: 1 1 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP CONSTRUCTION BAR -->
+  <div class="construction-strip">
+    <span>*** WEBSITE BUILD PREVIEW v0.9 (1998 EDITION) - CLIENT REVIEW DRAFT ***</span>
+  </div>
+
+  <!-- SCROLLING MARQUEES -->
+  <div class="marquee-top">
+    <marquee scrollamount="10" behavior="alternate">
+      *** WELCOME TO UNLOCK CAPE TOWN TOURS WEBSITE!! *** PRIVATE TOURS WITH LOUIS HENDRY (WC 16800) *** BEST VIEWED IN INTERNET EXPLORER 5.0 AT 800x600 ***
+    </marquee>
+  </div>
+  <div class="marquee-sub">
+    <marquee scrollamount="7" direction="right">
+      &gt;&gt;&gt; TABLE MOUNTAIN --- PENGUINS AT BOULDERS BEACH --- WINELANDS --- SAFARI --- CALL NOW: 084 060 7488 &lt;&lt;&lt;
+    </marquee>
+  </div>
+
+  <!-- TWO-COLUMN LAYOUT: MAIN RETRO CONTENT ON LEFT + UGLY RETRO FORM ON THE RIGHT SIDE -->
+  <div class="retro-master-layout">
+
+    <!-- LEFT COLUMN -->
+    <div class="page-wrap">
+
+      <!-- UGLY HEADER WITH OVER-RETRO LOGO -->
+      <div class="ugly-header">
+        <div class="retro-logo-box">
+          <img src="assets/logo.png" alt="Unlock Cape Town Retro Logo" />
+          <span class="retro-logo-tag">LOGO_256COLOR.GIF</span>
+        </div>
+
+        <div class="wordart-title">
+          UNLOCK CAPE TOWN<br />TOURS . CO . ZA
+        </div>
+
+        <div class="ugly-subtitle">
+          <span class="blink">[NEW!]</span> Number #1 Tour Guide in Cape Town South Africa!! (Reg: WC 16800)
+        </div>
+      </div>
+
+      <!-- CROOKED NAVIGATION LINKS -->
+      <div class="ugly-nav">
+        <a href="#pics-ugly">[Tour Pictures!!]</a>
+        <a href="#guide-ugly">[About Louis]</a>
+        <a href="#prices-ugly">[Tour Table]</a>
+        <a href="#ugly-booking-form">[Fax / Book Form]</a>
+        <a href="home2.html">[CONTINUE &gt;&gt;]</a>
+      </div>
+
+      <!-- PROMINENT CONTINUE BUTTON #1 -->
+      <div class="continue-banner">
+        <p>*** CLIENT PREVIEW NOTICE: Click the button below to continue to the next page ***</p>
+        <a href="home2.html" class="continue-btn">Continue &gt;&gt;</a>
+      </div>
+
+      <!-- MISALIGNED PICTURES SECTION -->
+      <div class="chaotic-section" id="pics-ugly">
+        <div class="chaotic-title">
+          OUR CAPE TOWN PHOTOS (100% REAL!!)
+        </div>
+
+        <p style="font-family:'Comic Sans MS',cursive; font-size:17px; color:#0000ff; margin-left:45px; margin-top:14px; background:#ffff00; display:inline-block; padding:4px;">
+          Look at all the cool places we drive to in our car!!! (Pictures loading below...)
+        </p>
+
+        <div class="bad-photo-row">
+          <!-- Photo 1: Squished wide & tilted left -->
+          <div class="bad-photo-1">
+            <img src="assets/images/cape-town-aerial.jpg" alt="Cape Town Aerial" />
+            <div class="photo-caption-ugly">
+              FIG 1: Table Mountain &amp; Ocean (Stretched_View.jpg)
+            </div>
+          </div>
+
+          <!-- Photo 2: Stretched tall & skinny, tilted right -->
+          <div class="bad-photo-2">
+            <img src="assets/images/boulders-penguins.jpg" alt="Boulders Beach Penguins" />
+            <div class="photo-caption-ugly">
+              Penguins_Simonstown_02.JPG (Very Cute!!)
+            </div>
+          </div>
+
+          <!-- Photo 3: Overflowing box & shifted right -->
+          <div class="bad-photo-3">
+            <img src="assets/images/winelands-stellenbosch.jpg" alt="Cape Winelands" />
+            <div class="photo-caption-ugly">
+              WINE TASTING IN STELLENBOSCH &amp; FRANSCHHOEK!!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GUIDE SECTION WITH FLOATING OVERFLOW IMAGE -->
+      <div class="guide-ugly-box" id="guide-ugly">
+        <img src="assets/images/chapmans-peak.jpg" alt="Chapmans Peak" />
+        <h2 style="font-family:'Comic Sans MS',cursive; color:#ff0000; margin:0 0 8px 18px; text-decoration:underline;">
+          ABOUT YOUR GUIDE: LOUIS HENDRY (WC 16800)
+        </h2>
+        <p style="font-size:17px; line-height:1.25; margin-left:4px; color:#000080;">
+          Hello and welcome to my Cyber-Web-Page!! My name is <b><font color="#ff0000">Louis Hendry</font></b> and I am an Accredited Tour Guide in the Western Cape. Why ride on a big noisy bus when you can come on a private tour?? We do <font style="background:#00ff00;">Airport Transfers</font>, <font style="background:#00ffff;">Peninsula Tours</font>, <font style="background:#ff99ff;">Wine Farms</font>, and <font style="background:#ffcc00;">Big 5 Safari Animals</font>!!
+        </p>
+        <div style="clear:both;"></div>
+      </div>
+
+      <!-- GARISH 90s TABLE OF TOURS -->
+      <div class="ugly-table-wrap" id="prices-ugly">
+        <table class="retro-table" border="6">
+          <thead>
+            <tr>
+              <th>TOUR NAME</th>
+              <th>WHAT YOU SEE!!</th>
+              <th>PICTURE (UNALIGNED)</th>
+              <th>BOOKING</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td-lime">
+                1) CAPE PENINSULA &amp; PENGUINS TOUR<br />
+                <span class="blink" style="color:#ff0000;">[MOST POPULAR!!]</span>
+              </td>
+              <td class="td-cyan">
+                Chapman's Peak Drive, Cape Point Lighthouse, Cape of Good Hope Sign, and Boulders Beach Penguins!
+              </td>
+              <td style="background:#000;">
+                <img src="assets/images/cape-point.jpg" alt="Cape Point" style="width:190px; height:68px; margin-left:20px; margin-top:-8px; border:4px solid #00ff00; transform:rotate(-4deg);" />
+              </td>
+              <td class="td-pink">
+                <b>CALL / WHATSAPP:</b><br />
+                084 060 7488
+              </td>
+            </tr>
+            <tr>
+              <td class="td-pink">
+                2) STELLENBOSCH &amp; FRANSCHHOEK WINE
+              </td>
+              <td class="td-lime">
+                Drink delicious wines, eat cheese, and look at big mountains in the Winelands!
+              </td>
+              <td style="background:#ff00ff;">
+                <img src="assets/images/franschhoek-winelands.jpg" alt="Franschhoek" style="width:125px; height:135px; margin-left:-10px; border:5px dashed #ffff00; transform:rotate(6deg);" />
+              </td>
+              <td class="td-cyan">
+                <b>EMAIL US:</b><br />
+                info@unlockcapetowntours.co.za
+              </td>
+            </tr>
+            <tr>
+              <td class="td-cyan">
+                3) TABLE MOUNTAIN &amp; BO-KAAP CITY TOUR
+              </td>
+              <td class="td-pink">
+                Go up the Cable Car, see colorful houses in Bo-Kaap, and visit V&amp;A Waterfront!
+              </td>
+              <td style="background:#00ffff;">
+                <img src="assets/images/bokaap-houses.jpg" alt="Bo-Kaap" style="width:205px; height:80px; margin-left:14px; margin-bottom:-12px; border:6px ridge #ff0000; transform:rotate(2.8deg);" />
+              </td>
+              <td class="td-lime">
+                PRIVATE VEHICLE INCLUDED!!
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- SECOND CROOKED PHOTO GALLERY -->
+      <div class="crooked-gallery">
+        <h3 style="font-family:'Courier New',monospace; color:#ffff00; background:#ff0000; display:inline-block; padding:4px 10px; margin-left:50px;">
+          *** MORE SNAPSHOTS FROM OUR CAMERA ***
+        </h3>
+        <br />
+        <img src="assets/images/camps-bay-sunset.jpg" alt="Camps Bay" class="crooked-img-a" />
+        <img src="assets/images/safari-game-drive.jpg" alt="Safari" class="crooked-img-b" />
+        <img src="assets/images/muizenberg-huts.jpg" alt="Muizenberg" class="crooked-img-c" />
+      </div>
+
+      <!-- BOTTOM CONTINUE BUTTON -->
+      <div class="continue-banner" style="background:#800080; border-color:#ffff00; margin-left:8px;">
+        <p style="font-size:18px; color:#00ff00;">
+          READY TO SEE THE REAL WEBSITE? CLICK CONTINUE BELOW!
+        </p>
+        <a href="home2.html" class="continue-btn">Continue &gt;&gt;</a>
+      </div>
+
+      <!-- RETRO HIT COUNTER -->
+      <div class="hit-counter-box">
+        <div>YOU ARE VISITOR NUMBER:</div>
+        <div class="counter-digits">000019</div>
+        <div style="font-size:12px; color:#ffff00; margin-top:4px;">
+          Last Updated: November 1998 • Created with Microsoft FrontPage Express
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE COLUMN: UGLY 1998 BOOKING & GUESTBOOK FORM -->
+    <aside class="ugly-side-column" id="ugly-booking-form">
+      <div class="ugly-form-header">
+        <span class="blink" style="color:#00ff00; font-size:13px;">*** FILL IN THIS FORM NOW!! ***</span>
+        <h2>E-MAIL &amp; FAX TOUR BOOKING FORM v1.2</h2>
+      </div>
+
+      <!-- Mini stretched retro logo inside the sidebar form too -->
+      <div class="ugly-form-logo-mini">
+        <img src="assets/logo.png" alt="Retro Logo Stamp" />
+        <span>
+          OFFICIAL FORM<br />
+          REG: WC 16800<br />
+          <font color="#ff0000">(STAMPED OK)</font>
+        </span>
+      </div>
+
+      <form action="home2.html" method="get" onsubmit="alert('THANK YOU FOR SUBMITTING YOUR 1998 CYBER-FORM!! Redirecting to the real website...');">
+        <fieldset class="retro-fieldset">
+          <legend>STEP 1: YOUR PERSONAL INFO</legend>
+
+          <div class="ugly-field-row">
+            <label>1. Your Full Name (Required*):</label>
+            <input type="text" class="ugly-input-text" value="Type Name Here..." />
+          </div>
+
+          <div class="ugly-field-row">
+            <label style="margin-left:18px; color:#ff0000;">2. Your E-Mail or CompuServe ID:</label>
+            <input type="text" class="ugly-input-text skew-right" value="tourist@aol.com" />
+          </div>
+
+          <div class="ugly-field-row">
+            <label>3. Telephone / Fax Machine Number:</label>
+            <input type="text" class="ugly-input-text" style="width:76%; background:#ffccff; color:#000;" value="+27 (0) " />
+          </div>
+
+          <div class="ugly-field-row">
+            <label>4. Dial-Up Modem Speed:</label>
+            <select class="ugly-select">
+              <option>28.8k Baud Modem</option>
+              <option>56k USRobotics V.90</option>
+              <option>ISDN Dual-Channel</option>
+              <option>I am at an Internet Cafe</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset class="retro-fieldset" style="background:#00ffff; border-color:#ff00ff; margin-left:-6px; margin-right:4px;">
+          <legend style="background:#ff0000; color:#ffff00;">STEP 2: PICK YOUR CAPE TOWN TOUR</legend>
+
+          <div class="ugly-field-row">
+            <label style="color:#000080;">Which Tour Do You Want??</label>
+            <select class="ugly-select" style="background:#ffff00; color:#ff0000;">
+              <option>Cape Peninsula &amp; Boulders Penguins</option>
+              <option>Stellenbosch &amp; Franschhoek Wine</option>
+              <option>Table Mountain &amp; Bo-Kaap City</option>
+              <option>Big 5 Animals Safari Drive</option>
+              <option>Hermanus Whales &amp; Sharks</option>
+              <option>Airport Pick-Up in Car</option>
+            </select>
+          </div>
+
+          <div class="ugly-field-row">
+            <label style="color:#000000;">How Many People in Car??</label>
+            <input type="number" class="ugly-input-text" style="width:110px; background:#00ff00; color:#0000ff;" value="2" />
+            <span style="font-family:'Courier New',monospace; font-size:12px; font-weight:bold; color:#ff0000;">&lt;-- Enter #</span>
+          </div>
+
+          <div class="ugly-checkbox-box">
+            <b>CHECK ALL boxes that apply:</b><br />
+            <label><input type="checkbox" checked /> Send me a physical Fax Confirmation</label><br />
+            <label><input type="checkbox" checked /> I want to see the Penguins</label><br />
+            <label><input type="checkbox" /> Sign my 1998 Guestbook</label><br />
+            <label><input type="checkbox" checked /> Mail me a CD-ROM Brochure</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="retro-fieldset" style="background:#ffcc99;">
+          <legend>STEP 3: TYPE MESSAGE TO LOUIS</legend>
+          <textarea rows="4" class="ugly-textarea">HELLO LOUIS!! PLEASE BOOK ME FOR A TOUR OF CAPE TOWN. SEND FAX BACK ASAP!!</textarea>
+        </fieldset>
+
+        <div class="ugly-form-buttons">
+          <button type="submit" class="btn-90s-submit">SEND FORM NOW!!</button>
+          <button type="reset" class="btn-90s-reset">CLEAR [X]</button>
+        </div>
+      </form>
+
+      <!-- Extra crooked retro widget below the form -->
+      <div class="side-fax-box">
+        <div class="blink" style="color:#ffff00; font-weight:bold; margin-bottom:4px;">
+          &gt;&gt; URGENT HOTLINE INFO &lt;&lt;
+        </div>
+        <b>DIRECT CELLULAR:</b> 084 060 7488<br />
+        <b>ELECTRONIC MAIL:</b> info@unlockcapetowntours.co.za<br />
+        <b>TOUR GUIDE REG:</b> WC 16800<br />
+        <hr style="border:2px dashed #ff00ff;" />
+        <div style="text-align:center; margin-top:8px;">
+          <a href="home2.html" class="continue-btn" style="font-size:17px; padding:8px 18px;">Continue &gt;&gt;</a>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- STICKY BOTTOM BAR FOR EASY CLICKING -->
+  <div class="sticky-continue-bar">
+    <div class="win95-status">
+      Status: Loading Home_3_Retro_Draft.htm (With Retro Logo &amp; Side Form)
+    </div>
+    <a href="home2.html" class="win95-continue">Continue &gt;&gt;</a>
+  </div>
+
+</body>
+</html>
