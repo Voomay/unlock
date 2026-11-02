@@ -938,6 +938,9 @@
     }
 
     @media (max-width: 680px) {
+      .modal-backdrop {
+        padding: 12px;
+      }
       .modal-head {
         padding: 22px 20px 18px;
       }
@@ -946,6 +949,13 @@
       }
       .modal-stops {
         grid-template-columns: 1fr;
+      }
+      .modal-actions {
+        flex-direction: column;
+      }
+      .modal-actions a {
+        width: 100%;
+        justify-content: center;
       }
     }
 
@@ -1523,6 +1533,10 @@
       }
     }
 
+    .nav-mobile-cta {
+      display: none;
+    }
+
     @media (max-width: 900px) {
       .mobile-menu-toggle {
         display: inline-flex;
@@ -1566,12 +1580,37 @@
       .main-nav a:hover {
         background: var(--badge-beige);
       }
+      .main-nav a.nav-mobile-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 8px;
+        background-color: var(--red-brand);
+        color: #FFFFFF !important;
+        font-weight: 700;
+        text-align: center;
+        box-shadow: 0 8px 20px rgba(227, 28, 19, 0.25);
+      }
+      .main-nav a.nav-mobile-cta:hover {
+        background-color: var(--red-hover);
+      }
     }
 
     @media (max-width: 680px) {
+      .container {
+        width: 100%;
+        padding: 0 20px;
+      }
+      .site-header {
+        padding: 12px 0;
+      }
       .header-logo-wrap {
-        width: 56px;
-        height: 56px;
+        width: 52px;
+        height: 52px;
+      }
+      .header-brand {
+        gap: 11px;
       }
       .header-brand-name {
         font-size: 15.5px;
@@ -1580,34 +1619,89 @@
         font-size: 10px;
       }
       .page-cover {
-        min-height: 410px;
-        padding: 64px 0 56px;
+        min-height: 360px;
+        padding: 52px 0 44px;
+      }
+      .cover-badges {
+        gap: 8px;
+      }
+      .cover-badge-item {
+        padding: 7px 13px;
+        font-size: 12.5px;
+      }
+      .tours-catalog,
+      .included-section {
+        padding: 48px 0 56px;
+      }
+      .catalog-header {
+        margin-bottom: 24px;
+      }
+      .filter-bar {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 6px;
+        margin-bottom: 28px;
+        -webkit-overflow-scrolling: touch;
+      }
+      .filter-btn {
+        flex-shrink: 0;
+        padding: 9px 15px;
+        font-size: 13px;
       }
       .tours-grid,
       .included-grid,
       .footer-grid {
         grid-template-columns: 1fr;
+        gap: 22px;
+      }
+      .tour-img-wrap {
+        height: 220px;
+      }
+      .tour-body {
+        padding: 22px 20px;
+      }
+      .tour-meta-bar {
+        flex-wrap: wrap;
+        gap: 6px;
       }
       .tour-actions {
         grid-template-columns: 1fr;
       }
+      .included-card {
+        padding: 22px 20px;
+      }
       .tagline-inner {
-        gap: 10px 14px;
+        gap: 8px 14px;
       }
       .tagline-word {
-        font-size: 17px;
+        font-size: 16px;
       }
       .story-banner {
-        padding: 64px 0;
-        min-height: 400px;
+        padding: 56px 0;
+        min-height: 380px;
       }
       .story-actions {
         flex-direction: column;
         width: 100%;
+        gap: 12px;
       }
       .story-actions .btn-red,
       .story-actions .btn-outline-cream {
         width: 100%;
+        justify-content: center;
+      }
+      .footer-grid {
+        gap: 30px;
+        padding-bottom: 32px;
+      }
+      .footer-brand-col {
+        padding-right: 0;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
       }
       .wa-chatbot {
         bottom: 16px;
@@ -1616,6 +1710,12 @@
       .wa-launcher {
         padding: 12px 16px;
         font-size: 13.5px;
+      }
+      .wa-chat-input {
+        font-size: 16px;
+      }
+      .site-footer {
+        padding: 48px 0 92px;
       }
     }
   </style>
@@ -1642,6 +1742,7 @@
         <a href="travel-guide.html">Travel Guide</a>
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact Us</a>
+        <a href="https://wa.me/27840607488?text=Hello%20Louis!%20I%20would%20love%20to%20book%20a%20private%20Cape%20Town%20tour." target="_blank" rel="noopener" class="nav-mobile-cta">Book a Tour on WhatsApp →</a>
       </nav>
 
       <div class="header-actions">
@@ -2211,15 +2312,31 @@
       const mobileToggle = document.getElementById('mobileMenuToggle');
       const mainNav = document.getElementById('mainNav');
       if (mobileToggle && mainNav) {
-        mobileToggle.addEventListener('click', function () {
-          const isOpen = mainNav.classList.toggle('open');
-          mobileToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        const menuIcon = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>';
+        const closeIcon = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>';
+        function setMenuState(open) {
+          mainNav.classList.toggle('open', open);
+          mobileToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+          mobileToggle.innerHTML = open ? closeIcon : menuIcon;
+        }
+        mobileToggle.addEventListener('click', function (e) {
+          e.stopPropagation();
+          setMenuState(!mainNav.classList.contains('open'));
         });
         mainNav.querySelectorAll('a').forEach(function (link) {
           link.addEventListener('click', function () {
-            mainNav.classList.remove('open');
-            mobileToggle.setAttribute('aria-expanded', 'false');
+            setMenuState(false);
           });
+        });
+        document.addEventListener('click', function (e) {
+          if (mainNav.classList.contains('open') && !mainNav.contains(e.target) && !mobileToggle.contains(e.target)) {
+            setMenuState(false);
+          }
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && mainNav.classList.contains('open')) {
+            setMenuState(false);
+          }
         });
       }
 
@@ -2343,6 +2460,12 @@
 
       modal.addEventListener('click', function (e) {
         if (e.target === modal) modal.classList.remove('open');
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && modal.classList.contains('open')) {
+          modal.classList.remove('open');
+        }
       });
 
       // Floating WhatsApp Chatbot
